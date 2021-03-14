@@ -4,8 +4,8 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
    wait(1)
    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 end)
-	
-	local function getPlr(name)
+
+local function getPlr(name)
     return workspace.Players[name]
 end
 
@@ -89,3 +89,11 @@ game:GetService("RunService").Stepped:Connect(function()
         game:GetService("ReplicatedStorage").Events.Game.Sell:FireServer(sellBlock)
     end
 end)
+
+while true do
+wait(1)
+local v1 = "Achievements"
+local v2 = "Pollen"
+local rem = game:GetService("ReplicatedStorage").Events.Game.Quest
+rem:FireServer(v1, v2)
+end
