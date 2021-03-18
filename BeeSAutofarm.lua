@@ -15,7 +15,7 @@ for _, v in pairs(plr:GetChildren()) do
     if v:IsA("BasePart") then v.CanCollide = false end
 end
 
-local WorldTree = workspace.Worlds.Swamp["World Tree"]
+local WorldTree = workspace.Worlds.Candy["World Tree"]
 
 local sellBlock
 
@@ -34,11 +34,11 @@ upgradeBlock.CFrame = sellBlock.CFrame
 
 plr:MoveTo(sellBlock.CFrame.Position)
 wait(1)
-local flower = workspace.Worlds.Swamp.Flowers.Hyacinth
+local flower = workspace.Worlds.Candy.Flowers.Carnation
 
 local function getFlower()
     if flower.Parent == nil then
-        flower = workspace.Worlds.Swamp.Flowers.Hyacinth
+        flower = workspace.Worlds.Candy.Flowers.Carnation
     end
     return flower
 end
